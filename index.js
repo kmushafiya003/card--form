@@ -27,25 +27,49 @@ displayYear.innerText = defaultYear;
 
 //for cardholder name
 cardholderName.addEventListener('input', () => {
-  displayCardHolderName.innerText = cardholderName.value;
+
+  if(cardholderName.value !== ""){
+    displayCardHolderName.innerText = cardholderName.value;
+  }else{
+    displayCardHolderName.innerText = defaultCardHolderName;
+  }
+  
 });
 
 //for card-number
 
 cardNumber.addEventListener('input', () => {
-  displayCardNumber.innerText = cardNumber.value;
+
+  if(cardNumber.value !== ""){
+    displayCardNumber.innerText = cardNumber.value;
+  }else{
+     displayCardNumber.innerText = defaultCardNumber;
+  }
+
 });
 
 //for expiry month
 
 expMonth.addEventListener('input', () => {
-  displayMonth.innerText = expMonth.value;
+
+  if(expMonth.value !== ""){
+    displayMonth.innerText = expMonth.value;
+  }else{
+    displayMonth.innerText = defaultMonth;
+  }
+  
 });
 
 //for expiry year
 
 expYear.addEventListener('input', () => {
-  displayYear.innerText = expYear.value;
+
+  if(expYear.value !== ""){
+    displayYear.innerText = expYear.value;
+  }else{
+    displayYear.innerText = defaultYear;
+  }
+  
 });
 
 console.log(form);
