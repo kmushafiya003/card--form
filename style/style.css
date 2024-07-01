@@ -50,7 +50,7 @@ input{
     padding: 8px;
     border-radius: 8px;
     border:1px solid var(--primary-violet);
-    width:90%;
+    width:97%;
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -74,7 +74,7 @@ input:focus{
     flex-direction: column;
     justify-content:flex-start;
     gap:60px;
-    border:2px solid red;
+   
     
 }
 
@@ -82,7 +82,7 @@ input:focus{
 .left-container{
 
     height:35vh;
-    border:2px solid blue;
+   
     width:100%;
     position: relative;
 }
@@ -95,26 +95,27 @@ input:focus{
 
 .card-container{
     position: absolute;
-    top:15%;
-    left:30%;
-    border:2px solid red;
+    top:60%;
+    left:5%;
+    box-shadow: 0px 10px 50px -3px rgba(0,0,0,0.1);
 }
 
 .front-card{
-    width:350px;
+    width:280px;
     position: absolute;
     z-index:1;
+    box-shadow: 0px 10px 50px -3px rgba(0,0,0,0.1);
 }
 
 .text-overlay{
-    border:2px solid yellow;
-    width:350px;
-    height:180px;
+
+    width:280px;
+    height:160px;
     position: absolute;
     z-index:2;
     display:flex;
     flex-direction: column;
-    gap:30px;
+    gap:20px;
     padding-top:30px;
     padding-inline:30px;
 
@@ -122,21 +123,21 @@ input:focus{
 }
 
 .card-logo{
-    width: 70px;
+    width: 40px;
 }
 
 .card-content{
-    border:2px solid green;
+    
     display: flex;
     flex-direction: column;
     gap:20px;
-    font-size: 18px;
+    font-size: 14px;
     color:var(--white);
     letter-spacing: 1.5px;
 }
 
 .display-card-number{
-    font-size: 18px;
+    font-size: 1p6x;
     letter-spacing: 1.5px;
 }
 
@@ -150,17 +151,18 @@ input:focus{
 }
 
 .card-back{
-    width:350px;
+    width:280px;
     position: absolute;
-    top:45%;
-    left:50%;
+    top:20%;
+    left:10%;
+    box-shadow: 0px 10px 50px -3px rgba(0,0,0,0.1);
 }
 
 
 
 .right-container{
     height:60vh;
-    border:2px solid green;
+ 
     width:100%;
     display:flex;
     justify-content: center;
@@ -170,8 +172,8 @@ input:focus{
 }
 
 .card-detail-form{
-    border:2px solid blue;
-    width:80%;
+   
+    width:90%;
     padding:36px;
     display:flex;
     flex-direction: column;
@@ -215,7 +217,7 @@ input:focus{
 
 
 .submit-btn{
-    width:80%;
+    width:100%;
     cursor:pointer;
     display:flex;
     justify-content: center;
