@@ -222,6 +222,7 @@ input:focus{
     justify-content: center;
     align-items: center;
     padding-block:12px;
+    margin-bottom:30px;
     border-radius:8px;
     outline:none;
     border:none;
