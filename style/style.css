@@ -241,3 +241,75 @@ input:focus{
 .submit-btn:hover{
     box-shadow: 0 0 30px var(--primary-violet);
 }
+
+
+/* submit page */
+
+.submit-right-container{
+    
+  
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+
+.submit-content-container{
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    gap:38px;
+
+}
+.submit-content{
+  
+    display: flex;
+    flex-direction: column;
+   gap:20px;
+    align-items: center;
+
+}
+
+.complete-logo{
+    width:70px;
+}
+
+.thank{
+    color:var(--dark-violet);
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight:400;
+}
+
+.details{
+    color:var(--violet);
+    font-size:14px;
+    letter-spacing: 1px;
+}
+
+.continue-btn{
+    width:70%;
+    margin: auto;
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-block:12px;
+    border-radius:8px;
+    outline:none;
+    border:none;
+    background-color: var(--dark-violet);
+    color: var(--white);
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size:16px;
+    transition: all;
+    transition-duration: 1.4s;
+    
+}
+
+.continue-btn:hover{
+    box-shadow: 0 0 30px var(--primary-violet);
+}

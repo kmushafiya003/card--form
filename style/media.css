@@ -46,7 +46,12 @@
     .card-logo{
         width: 50px;
     }
+
+    .submit-content-container{
+        width:90%;
+    }
    
+    
 
    
     
@@ -112,7 +117,16 @@
     .card-logo{
         width: 70px;
     }
-   
+
+      
+    .submit-content-container{
+        width:75%;
+    }
+
+    .submit-right-container{
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -132,6 +146,9 @@
 
     .card-detail-form{
         width:70%;
+    }
+    .submit-content-container{
+        width:60%;
     }
    
 
@@ -192,6 +209,10 @@
         width:88%;
     }
 
+    .submit-content-container{
+        width:90%;
+    }
+
 }
 
 @media only screen and (min-width: 900px){
@@ -224,6 +245,10 @@
     }
 
     .card-detail-form{
+        width:85%;
+    }
+
+    .submit-content-container{
         width:85%;
     }
 
@@ -271,6 +296,10 @@
      .card-container{
         left:25%;
     }
+
+    .submit-content-container{
+        width:75%;
+    }
    
     
 
@@ -292,6 +321,10 @@
    
     .card-back{
         left:50%;
+    }
+
+    .submit-content-container{
+        width:60%;
     }
 
 
@@ -323,6 +356,8 @@
     .card-back{
         left:45%;
     }
+
+    
 
 
 }

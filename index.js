@@ -28,22 +28,25 @@ displayYear.innerText = defaultYear;
 //for cardholder name
 cardholderName.addEventListener('input', () => {
 
-  if(cardholderName.value !== ""){
+
+
+  if (cardholderName.value !== "") {
     displayCardHolderName.innerText = cardholderName.value;
-  }else{
+  }
+  else {
     displayCardHolderName.innerText = defaultCardHolderName;
   }
-  
+
 });
 
 //for card-number
 
 cardNumber.addEventListener('input', () => {
 
-  if(cardNumber.value !== ""){
+  if (cardNumber.value !== "") {
     displayCardNumber.innerText = cardNumber.value;
-  }else{
-     displayCardNumber.innerText = defaultCardNumber;
+  } else {
+    displayCardNumber.innerText = defaultCardNumber;
   }
 
 });
@@ -52,24 +55,24 @@ cardNumber.addEventListener('input', () => {
 
 expMonth.addEventListener('input', () => {
 
-  if(expMonth.value !== ""){
+  if (expMonth.value !== "") {
     displayMonth.innerText = expMonth.value;
-  }else{
+  } else {
     displayMonth.innerText = defaultMonth;
   }
-  
+
 });
 
 //for expiry year
 
 expYear.addEventListener('input', () => {
 
-  if(expYear.value !== ""){
+  if (expYear.value !== "") {
     displayYear.innerText = expYear.value;
-  }else{
+  } else {
     displayYear.innerText = defaultYear;
   }
-  
+
 });
 
 console.log(form);
@@ -94,12 +97,13 @@ function submitHandler(event) {
   if (cardholderName.value === '') {
     nameError.innerText = "Can't be blank";
     cardholderName.classList.add('error-input');
+
   }
 
   if (cardNumber.value === '') {
     numberError.innerText = "Can't be blank";
     cardNumber.classList.add('error-input');
-  } else if(cardNumber.value.length !== 16){
+  } else if (cardNumber.value.length !== 16) {
     numberError.innerText = 'Please enter 16 digits';
     cardNumber.classList.add('error-input');
   }
@@ -150,16 +154,33 @@ function submitHandler(event) {
     cvc.value !== '' &&
     !isNaN(cvc.value)
   ) {
+
+    const formData = {
+      cardholderName: cardholderName.value,
+      cardNumber: cardNumber.value,
+      expMonth: expMonth.value,
+      expYear: expYear.value,
+    }
+
+    sessionStorage.setItem("formData", JSON.stringify(formData));
+
+    cardholderName.value = '';
+    cardNumber.value = '';
+    expMonth.value = '';
+    expYear.value = '';
+    cvc.value = '';
+
+    displayCardNumber.innerText = defaultCardNumber;
+    displayCardHolderName.innerText = defaultCardHolderName;
+    displayMonth.innerText = defaultMonth;
+    displayYear.innerText = defaultYear;
+
+
+
     window.location.href = form.action;
   }
 }
 
-function resetAll() {
-  cardholderName = '';
-  cardNumber = '';
-  expMonth = '';
-  expYear = '';
-  cvc = '';
-}
+
 
 form.addEventListener('submit', submitHandler);
