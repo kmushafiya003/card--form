@@ -170,10 +170,9 @@ input:focus {
 
 .card-detail-form {
 
-    border: 2px solid red;
     width: 90%;
     padding: 36px;
-    padding-top: 90px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -248,10 +247,8 @@ input:focus {
 
 .submit-right-container {
 
-
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+  
 
 }
 

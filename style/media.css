@@ -216,6 +216,10 @@
         width:90%;
     }
 
+    .card-detail-form{
+        padding-top:90px;
+    }
+
 }
 
 @media only screen and (min-width: 900px){
